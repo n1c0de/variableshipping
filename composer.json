@@ -1,0 +1,26 @@
+{
+    "name": "n1c0de/variableshipping",
+    "description": "Allows a variable shipping price to be set for manual orders in the back office.",
+    "homepage": "https://github.com/n1c0de/variableshipping",
+    "license": "",
+    "authors": [
+        {
+            "name": "n1c0de",
+            "homepage": "https://gitlab.com/n1c0de"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "PrestaShop\\Module\\VariableShipping\\": "src/"
+        },
+        "classmap": ["variableshipping.php"],
+        "exclude-from-classmap": []
+    },
+    "config": {
+        "prepend-autoloader": false
+    },
+    "type": "prestashop-module"
+}

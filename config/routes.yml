@@ -1,0 +1,19 @@
+admin_order_variable_shipping_cost:
+  path: sell/orders/variable-shipping-cost
+  methods: [GET]
+  defaults:
+    _controller: 'PrestaShop\Module\VariableShipping\Controller\Admin\Sell\Order\OrderVariableShippingFormController::getVariableShippingCarrierAction'
+    _legacy_controller: AdminOrderVariableShippingForm
+    _disable_module_prefix: true
+  options:
+    expose: true
+
+admin_order_variable_shipping_cost_update:
+  path: sell/orders/variable-shipping-cost/update
+  methods: [POST]
+  defaults:
+    _controller: 'PrestaShop\Module\VariableShipping\Controller\Admin\Sell\Order\OrderVariableShippingFormController::updateAction'
+    _legacy_controller: AdminOrderVariableShippingForm
+    _disable_module_prefix: true
+  options:
+    expose: true
